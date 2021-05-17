@@ -56,7 +56,7 @@ class CRUD{
         try {
             
             //Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection(url, "root", "Codigo1998"); //Conexion a schema
+            Connection conexion = DriverManager.getConnection(url, "root", "[aquí iría tu contraseña del admin de la base de datos]"); //Conexion a schema
             PreparedStatement pst = conexion.prepareStatement( //Instruccion SQL
                 "SELECT id_persona, nombre FROM persona");
 
